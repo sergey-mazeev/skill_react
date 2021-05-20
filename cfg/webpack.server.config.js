@@ -18,24 +18,10 @@ module.exports = {
     module: {
         rules: [{
             test: /\.[jt]sx?$/,
-            exclude: /node_modules/,
-            loader: 'babel-loader',
-            options: {
-                "presets": [
-                    "@babel/preset-env",
-                    "@babel/preset-react",
-                    "@babel/preset-typescript"
-                ],
-                "plugins": [
-                    "@babel/proposal-class-properties",
-                    "@babel/proposal-object-rest-spread",
-                    "@babel/plugin-transform-react-jsx",
-                    "@babel/plugin-syntax-jsx"
-                ]
-            },
+            use: ['ts-loader'],
         }],
     },
     optimization: {
         minimize: false,
-    },
+    }
 };
