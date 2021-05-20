@@ -9,7 +9,9 @@ compiler.run((error) => {
     if (error) {
         console.log('Compilation failed: ', error);
     }
-    compiler.watch({}, (err) => {
+    compiler.watch({
+        ignored: ['**/node_modules/', '**/dist'],
+    }, (err) => {
         if (err) {
             console.log('Compilation failed: ', err);
             return false;
