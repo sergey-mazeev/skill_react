@@ -10,7 +10,10 @@ compiler.run((error) => {
         console.log('Compilation failed: ', error);
     }
     compiler.watch({
-        ignored: ['**/node_modules/', '**/dist'],
+        ignored: [
+            path.resolve(__dirname, '../node_modules/'),
+            path.resolve(__dirname, '../dist/')
+        ],
     }, (err) => {
         if (err) {
             console.log('Compilation failed: ', err);
