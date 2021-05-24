@@ -5,7 +5,7 @@ import Header from "../shared/Header";
 
 const app = express();
 
-app.use('/static', express.static('../dist/client'));
+app.use('/static/', express.static('../dist/client/'));
 
 app.get('/', (req, res) => {
     res.send(indexTemplate(ReactDOM.renderToString(Header())));
