@@ -1,9 +1,11 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const NODE_ENV = process.env.NODE_ENV;
 const IS_DEV = NODE_ENV === 'development';
 const IS_PROD = NODE_ENV === 'production';
+const GLOBAL_SCSS_REGEXP = /global\.s[ac]ss$/;
 
 function setupDevTool() {
     if (IS_DEV) {
@@ -44,12 +46,25 @@ module.exports = {
                     },
                     'sass-loader',
                 ],
-            }]
+                exclude: path.resolve(__dirname, './src/styles/'),
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                include: path.resolve(__dirname, './src/styles/'),
+                exclude: path.resolve(__dirname, './src/styles/helpers/'),
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    "css-loader",
+                    "sass-loader"
+                ]
+            }
+        ]
     },
     plugins: [
         new HTMLWebpackPlugin({
             template: path.resolve(__dirname, 'index.html'),
-        })
+        }),
+        new MiniCssExtractPlugin(),
     ],
     devServer: {
         port: 3000,

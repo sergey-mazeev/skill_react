@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@import "helpers/normalize";
+
+// Global styles
+
+:root {
+  --black: #333333;
+  --white: #ffffff;
+  --orange: #cc6633;
+  --green: #a4cc33;
+  --grayF4: #f4f4f4;
+  --grayF3: #f3f3f3;
+  --grayD9: #d9d9d9;
+  --grayC4: #c4c4c4;
+  --gray99: #999999;
+  --gray66: #666666;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--grayF4);
+  min-height: 100vh;
+  color: var(--black);
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
