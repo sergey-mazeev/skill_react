@@ -1,0 +1,33 @@
+.karmaCounter {
+  display: flex;
+  align-items: center;
+}
+
+.karmaCounterValue {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--grayC4);
+  margin-left: 4px;
+  margin-right: 4px;
+  text-align: center;
+  min-width: 25px;
+}
+
+.button {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  svg {
+    display: block;
+  }
+  path {
+    transition: fill .25s;
+  }
+
+  &.buttonInc:active path {
+    fill: var(--green);
+  }
+  &.buttonDec:active path {
+    fill: #CC3361;
+  }
+}

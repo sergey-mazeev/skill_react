@@ -1,0 +1,57 @@
+.user {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  @media screen and (min-width: 660px) {
+	order: 2;
+  }
+  @media screen and (min-width: 1024px) {
+	&:hover .userImgWrapper::before {
+	  border-color: var(--orange);
+	}
+  }
+}
+
+.userImgWrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  @media screen and (min-width: 1024px) {
+	overflow: unset;
+	position: relative;
+	&::before {
+	  content: '';
+	  display: block;
+	  width: 60px;
+	  height: 60px;
+	  position: absolute;
+	  top: -5px;
+	  left: -5px;
+	  border: 1px solid transparent;
+	  border-radius: 50%;
+	  transition: border-color .25s;
+	}
+  }
+}
+
+.userImg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  @media screen and (min-width: 660px) {
+	width: 50px;
+	height: 50px;
+  }
+}
+
+.userName {
+  display: none;
+  @media screen and (min-width: 660px) {
+	display: block;
+	margin-left: 13px;
+	color: var(--orange);
+	font-weight: 500;
+	font-size: 1.25em;
+  }
+}

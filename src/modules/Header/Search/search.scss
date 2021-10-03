@@ -1,0 +1,57 @@
+.search {
+  flex-grow: 1;
+  margin-left: 14px;
+  margin-right: 14px;
+  @media screen and (min-width: 500px) {
+	margin-left: auto;
+	max-width: 220px;
+  }
+  @media screen and (min-width: 660px) {
+	max-width: 280px;
+	order: 1;
+	margin-right: 30px;
+  }
+  @media screen and (min-width: 1024px) {
+	max-width: 360px;
+  }
+}
+
+.searchInput {
+  display: block;
+  width: 100%;
+  background-color: var(--grayF4);
+  border: 0;
+  font-size: 12px;
+  height: 30px;
+  padding-left: 30px;
+  padding-right: 16px;
+  line-height: 30px;
+  border-radius: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.5407 11.9497H12.7035L12.4067 11.6564C13.4454 10.418 14.0707 8.81018 14.0707 7.06118C14.0707 3.16124 10.9865 0 7.18169 0C3.37686 0 0.292725 3.16124 0.292725 7.06118C0.292725 10.9611 3.37686 14.1224 7.18169 14.1224C8.88804 14.1224 10.4566 13.4814 11.6648 12.4168L11.951 12.721V13.5792L17.2502 19L18.8293 17.3814L13.5407 11.9497ZM7.18169 11.9497C4.54269 11.9497 2.41241 9.76615 2.41241 7.06118C2.41241 4.3562 4.54269 2.17267 7.18169 2.17267C9.8207 2.17267 11.951 4.3562 11.951 7.06118C11.951 9.76615 9.8207 11.9497 7.18169 11.9497Z' fill='%23C4C4C4'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: 14px 46%;
+  background-size: 11px 11px;
+  transition: background-image .25s;
+
+  &::placeholder {
+	color: var(--grayC4);
+  }
+
+  &:focus,
+  &:active {
+	outline: none;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAVFBMVEUAAABgYGBwcHBoaGhlZWVkZGRoaGhjY2NmZmZmZmZlZWVmZmZmZmZmZmZmZmZlZWVnZ2dlZWVnZ2dmZmZmZmZlZWVnZ2dmZmZmZmZlZWVmZmZmZmbzY/pFAAAAG3RSTlMAEBAgMEBAUFBfYHB/gI+QkJ+foK+/v8/f7+8ImwsUAAAAl0lEQVR42q3Q0Q6CMAyF4WkHIDJQHFj43/89BS02Jlx6rg5f0rQsbJFWQXMdftJhmSR47sB4S3kGdW9Bi61ID3oyFdCz9QTJ6gN88snybZOvuUL8NOidIzQ7pyNWBucKyn3lsh7l++2jgG7XEh+doDWd8WNFQS+l1COQV3a3zNkm7S/0jYMI5pZYNXF7meTu+a+ncOQpvAB5OA5J97SgNAAAAABJRU5ErkJggg==);
+  }
+
+  @media screen and (min-width: 660px) {
+	background-color: #ffffff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	height: 50px;
+	line-height: 50px;
+	border-radius: 30px;
+	font-size: 20px;
+	padding-left: 56px;
+	background-size: 19px auto;
+	background-position: 28px 50%;
+  }
+}

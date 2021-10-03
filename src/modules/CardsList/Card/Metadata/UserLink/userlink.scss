@@ -1,0 +1,17 @@
+.userLink {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+  text-decoration: none;
+  img {
+	width: 30px;
+	height: 30px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-right: 7px;
+  }
+  span {
+	color: var(--orange);
+	font-size: 10px;
+  }
+}

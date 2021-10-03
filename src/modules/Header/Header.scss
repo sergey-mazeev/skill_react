@@ -2,84 +2,28 @@
   //display: flex;
   //align-items: center;
   margin-bottom: 20px;
-}
 
-.user {
-  width: 30px;
-  height: 30px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.userimg {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.search {
-  flex-grow: 1;
-  margin-left: 14px;
-  margin-right: 14px;
-}
-
-.searchInput {
-  display: block;
-  width: 100%;
-  background-color: var(--grayF4);
-  border: 0;
-  font-size: 12px;
-  height: 30px;
-  padding-left: 30px;
-  padding-right: 16px;
-  line-height: 30px;
-  border-radius: 16px;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAS1BMVEUAAAC/v7+/v7/Hx8e/v7/ExMTDw8PCwsLExMTCwsLExMTFxcXDw8PExMTDw8PExMTFxcXCwsLFxcXExMTExMTDw8PDw8PExMTExMTYmwDTAAAAGHRSTlMAECAgMDBAUF9gcH+Aj5Cfn6Cvv8/f7+8XD5inAAAAkklEQVR42q3PBQ7DMAyFYZeZ6/a//0mnaM6cShXviV6+sITkg4LujTwyYTnyRJcA87hfoO4DaB1KPoNmpnnSRxitbuA7T+5fO/yaHqpvg9m5hC7y+MbK6txAHa+8MxG/3wY1TIahL7EfMJheyWNzBW3rojmAvZDELdcOQ/ILJeCS5zxcqqarwhtGd89/fZQ3H+UDxEUMu1Cbt8IAAAAASUVORK5CYII=);
-  background-repeat: no-repeat;
-  background-position: 14px 46%;
-  background-size: 11px 11px;
-  transition: background-image .25s;
-
-  &::placeholder {
-	color: var(--grayC4);
-  }
-
-  &:focus,
-  &:active {
-	outline: none;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAVFBMVEUAAABgYGBwcHBoaGhlZWVkZGRoaGhjY2NmZmZmZmZlZWVmZmZmZmZmZmZmZmZlZWVnZ2dlZWVnZ2dmZmZmZmZlZWVnZ2dmZmZmZmZlZWVmZmZmZmbzY/pFAAAAG3RSTlMAEBAgMEBAUFBfYHB/gI+QkJ+foK+/v8/f7+8ImwsUAAAAl0lEQVR42q3Q0Q6CMAyF4WkHIDJQHFj43/89BS02Jlx6rg5f0rQsbJFWQXMdftJhmSR47sB4S3kGdW9Bi61ID3oyFdCz9QTJ6gN88snybZOvuUL8NOidIzQ7pyNWBucKyn3lsh7l++2jgG7XEh+doDWd8WNFQS+l1COQV3a3zNkm7S/0jYMI5pZYNXF7meTu+a+ncOQpvAB5OA5J97SgNAAAAABJRU5ErkJggg==);
+  @media screen and (min-width: 660px) {
+	display: flex;
+	align-items: center;
+	padding: 30px 40px;
   }
 }
 
-.messages {
-
-}
-
-.messagesLink {
-  text-decoration: none;
+.headerPanel {
+  background: #FFFFFF;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 7px 7px;
+  padding: 14px 20px;
   display: flex;
   align-items: center;
-
-  i {
-	font-style: normal;
-	font-size: 9px;
-	color: #ffffff;
-	font-weight: 500;
-	width: 14px;
-	height: 14px;
-	border-radius: 50%;
-	margin-right: 5px;
-	background-color: var(--orange);
-	display: flex;align-items: center;justify-content: center;
-  }
-
-  span {
-	font-size: 0;
-	width: 13px;
-	height: 11px;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAVCAMAAABvwg4pAAAASFBMVEUAAADPz8/X19fa2trX19fZ2dnZ2dnX19fa2trY2Njb29vX19fa2trY2NjY2Nja2trX19fZ2dnY2Nja2trZ2dnZ2dnZ2dnZ2dl9XtE9AAAAF3RSTlMAECAwQFBfYG9wf4CPkJ+foKC/v8/f7/cXI/kAAACASURBVHjadM5FAoAwDAXRKe4O//4nxR0629cmAROmP0UuOL3+iwllaSCVwu/HppAWwqme0PukGznw+JgbqDfqYyA9oPPAabXRjM5x6hCDSQYdNJeYdWrjgNdLd1IfgOODyaQnzZUOEA36IfXxuv5B/00bAlIsuGSEgEEuil2GCQBL8ymbKvqIXgAAAABJRU5ErkJggg==);
-	background-size: contain;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
+  @media screen and (min-width: 660px) {
+	background-color: transparent;
+	border-radius: 0;
+	box-shadow: none;
+	order: 1;
+	margin-left: auto;
+	padding: 0;
   }
 }
+

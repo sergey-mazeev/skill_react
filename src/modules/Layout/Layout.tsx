@@ -6,7 +6,7 @@ interface ILayoutProps {
 
 export default ({children}: ILayoutProps) => {
     return (
-        <div className="container">
+        <div className="page-layout">
             {children}
         </div>
     );
