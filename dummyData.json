@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "postId": 0,
+      "postTitle": "Реплицированные с зарубежных источников возможности с зарубежных источников возможности с зарубежных источников возможности",
+      "postUrl": "#",
+      "postPreview": "/img/sample-image.jpg",
+      "postDate": "2021/10/04 20:05:00",
+      "postUser": {
+        "id": 0,
+        "name": "Константин кодов",
+        "avatar": "/img/user-avatar.jpg"
+      }
+    },
+    {
+      "postId": 1,
+      "postTitle": "Второй тестовый заголовок",
+      "postUrl": "#",
+      "postPreview": "/img/sample-image.jpg",
+      "postDate": "2021/10/04 22:05:00",
+      "postUser": {
+        "id": 0,
+        "name": "Константин Нодов",
+        "avatar": "/img/user-avatar.jpg"
+      }
+    },
+    {
+      "postId": 2,
+      "postTitle": "Третий тестовый заголовок",
+      "postUrl": "#",
+      "postPreview": "/img/sample-image.jpg",
+      "postDate": "2021/02/01 05:05:00",
+      "postUser": {
+        "id": 0,
+        "name": "Анатолий Реактов",
+        "avatar": "/img/user-avatar.jpg"
+      }
+    }
+  ]
+}

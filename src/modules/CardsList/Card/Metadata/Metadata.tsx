@@ -1,12 +1,22 @@
 import React from 'react';
 import styles from './metadata.scss';
 import UserLink from "./UserLink/UserLink";
+import getLastTime from "../../../../utils/getLastTime";
 
-export default () => {
+interface IMetadataProps {
+    user: {
+        id: number,
+        name: string,
+        avatar: string,
+    },
+    date: string,
+}
+
+export default ({user, date}: IMetadataProps ) => {
   return (
       <div className={styles.metaData}>
-        <UserLink/>
-        <div className={styles.createdAt}>4 часа назад</div>
+        <UserLink userData={user}/>
+        <div className={styles.createdAt}>{getLastTime(date)}</div>
         <div className={styles.viewTimer}>1 час назад</div>
       </div>
   );
